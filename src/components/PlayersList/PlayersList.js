@@ -11,6 +11,7 @@ const PlayersList = (props) => (
         score={player.score}
         // each time when +/- button is pressed in Player component onPlayerScoreChange function is executed, info about points and palyer key is transeferd to App component with onScoreUpdate function
         onPlayerScoreChange={(points) => props.onScoreUpdate(i,points)}
+        onPlayerRemove={() => props.onPlayerRemove(i)}
       />)
     )}
   </ul>
